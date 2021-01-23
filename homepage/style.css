@@ -1,0 +1,76 @@
+/* Selector{ */
+    /* Property: value; */
+/* } */
+/* since body is the parent of h2, p -> put it on top */
+/* * represent all elements */
+* {
+    text-align: : right;
+}
+
+body {
+    background-image: url(https://secure.img1-fg.wfcdn.com/im/96336504/resize-h500-w500%5Ecompr-r85/5896/58965419/Erickson+Removable+Abstract+Watercolor+Background+3.92%2527+L+x+75%2522+W+Wall+Mural.jpg);
+    background-size: cover;
+}
+
+/* if h2 p: indicate p inside h2 */
+
+h2, p {
+    /* pick color:https://paletton.com/ */
+    color: #806515;
+    text-align: center;
+    border: 5px dashed rgba(213, 187 , 107, 0.5);   
+    cursor: pointer;
+}
+
+p {
+    color: pink;
+    text-decoration: underline;
+    /* line-through */
+    text-transform: uppercase;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    /* if you want the text appears on the right side of the picture */
+    float: right;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+li {
+    list-style: none;
+    /* display: inline-block; */
+}
+/* class */
+.webtext {
+    border: 5px dashed #8F78AD;
+}
+
+.active {
+    color: rgb(73, 110, 137);
+}
+/* id */
+#div1 {
+    background: rgba(0, 0, 255, 0.2)
+}
+
+#div2 {
+    background: rgba(255, 0, 0, 0.2)
+}
+
+/* if section > p: indicate all p (s) that have parent of h2 (wrapped by <div> */
+/* if h2 + p: indicate all p that is right after h2 */
+/* if h2 + p: hover : only change style if hover the mouse over  */
+/* last-child: apply only last object in class */
+/* !important: overwrite all other rules applied */
+
+/* Cascading styles win out depends on: */
+/* - Specificity: learn more "specificity calculator css" */
+/* - Importance */
+/* - Order: the lastest stylesheet may mask the previous one in html file */
