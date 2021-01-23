@@ -1,0 +1,26 @@
+h2 {
+    color: blue;
+}
+
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    /* top right bottom left */
+    padding: 5px 20px 5px 20px;
+    /* or just assign argument for top right if bottom left are the same */
+    margin: 0px 20px;
+    width: 33px;
+    height: 55px;
+}
+
+p {
+    font-size: 20px;
+}
+/* Size of inline style is 2 times the style of respective element */
+span {
+    font-size: 2em;
+}
+/* Size of inline style is 2 times the style of root element-html in this case*/
+span {
+    font-size: 2rem;
+}
