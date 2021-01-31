@@ -1,3 +1,6 @@
+##### Setting up environment
+- `git config --global user.name "name"
+- `git config --global user.name "name@email.com"
 ##### Basic syntax
 - `git clone URL`
 - `git pull`
@@ -22,7 +25,12 @@
     - Remodified the file
     - Check status, add, commit
     - `git push origin conflict`
-
+##### Make sure your fork is up to date
+- Current configured remote repository for your fork `git remote -v`
+- `git remote add upstream <URL of the original repository>`
+- To verify the new upstream repository, type `git remote -v` again 
+- One simple way: `git pull upstream master`
+- Another method for [Syncing a fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 ##### Contributing to open source
 - github.com/zero-to-mastery/start-here-guidelines
 - Better fork the project than clone the repository
