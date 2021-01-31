@@ -40,3 +40,14 @@ document.querySelectorAll("li")[1].parentElement.parentElement.children;  //all 
 ```
 ##### CACHE selectors in variables:
 `var h1 = document.querySelector("h1");   //assigning a variable`
+
+##### DOM events
+- List of events (click, hover, search...): https://developer.mozilla.org/en-US/docs/Web/Events
+- button.addEventListener(<event_name>, <function>)
+- Creating element
+`document.createElement("li");`
+- Keycode: https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+- 
+
+
+

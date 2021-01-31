@@ -1,16 +1,37 @@
-document.getElementsByTagName("h1");
-document.getElementsByClassName("second")[0];
-document.getElementById("first");[0]
+// var button = document.getElementsByTagName("button")[0]; 
+// // NOTE: Rememer to include [index] otherwise return array -> error
 
-document.querySelector("h1");
-document.querySelector("li"); //only select the 1st item
-document.querySelectorAll("li, h1");
+// button.addEventListener("mouseenter", function() {
+//     console.log("CLICK!!!!");
+// })
 
-// deal with attribute
-document.querySelector("li").getAttribute("random");
-document.querySelector("li").setAttribute("random", 1000);
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
 
-// changing styles
-document.querySelector("h1").style; //all elements have style properties
-document.querySelector("h1").style.background = "yellow";
-// Separations of Concerns - better way:
+function inputLength() {
+    return input.value.length;
+}
+
+function createListElement() {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+    input.value = ""; //clear the string after entering
+}
+
+function addListAfterClick() {
+    if (inputLength() > 0) {  //avoid adding blank
+        createListElement();
+    }
+}
+
+function addListAfterKeypress(event) {
+    if (inputLength() > 0 && event.keyCode === 13) {  //can be event.which; refer keycode in https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+        createListElement();
+    }
+}
+
+button.addEventListener("click", addListAfterClick);
+
+    

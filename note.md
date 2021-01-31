@@ -15,6 +15,7 @@
 - `<img src="www.google.com">`   #src (source) is an attribute
 - Attribute: always has a value attached to it
 - Other attribute for image: alt (alternative text for image), width, height
+- Avantage of id over class: faster performance because id is unique
 ##### Anchor tag: `<a>`
 - Eg: <a href="newpage.html">New Page</a>	#New Page: the text line will appear for hyperlink
 - href: hypertext reference
